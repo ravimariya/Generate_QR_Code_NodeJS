@@ -1,0 +1,13 @@
+extends ../layout
+
+block content
+  h3= title
+  .row(style='margin-top:50px')
+    .col-md-6
+      .form-group
+        input(type='text', placeholder='text', class='form-control', id='qrcode_text')
+      .form-group
+        button(id='generateQR', class='btn btn-success') Generate
+        button(id='clearQR', class='btn btn-danger', style='margin-left:10px') Clear
+    .col-md-6
+      #qrcode
